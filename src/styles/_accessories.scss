@@ -1,0 +1,15 @@
+.accessories {
+  padding: 81px 0 0;
+
+  &__load {
+    border-bottom: 1px solid #C4C0B6;
+    padding-bottom: 12px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+}

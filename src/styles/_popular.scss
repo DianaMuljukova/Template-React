@@ -1,0 +1,118 @@
+.popular {
+  position: relative;
+  background: white;
+  padding: 80px 0 77px;
+
+  &__title {
+    text-align: right;
+    position: relative;
+
+    h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .open {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #C4C0B6;
+    }
+  }
+
+  &__prod {
+    position: relative;
+    background: #FDFDFB;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__price {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+
+      p {
+        margin: 0;
+        font-family: Playfair Display;
+        font-size: 14px;
+        font-weight: 700;
+
+        &:last-child {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__first {
+      &::before {
+        content: '';
+        width: 313px;
+        height: 313px;
+        border-top: 1px solid #D4B098;
+        border-right: 1px solid #D4B098;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5%;
+      }
+    }
+
+    &__second {
+      &::before {
+        content: '';
+        width: 240px;
+        height: 472px;
+        background: linear-gradient(180deg, rgba(231, 224, 207, 0) 0%, #E7E0CF 100%);
+        border-radius: 0 100% 100% 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5%;
+      }
+    }
+
+    &__third {
+      &::before {
+        content: '';
+        width: 220px;
+        height: 220px;
+        border-top: 1px solid #D4B098;
+        border-right: 1px solid #D4B098;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5%;
+      }
+    }
+  }
+
+  &__description {
+    position: absolute;
+    font-family: Playfair Display;
+    left: 10%;
+    bottom: 10%;
+
+    &::before {
+      content: '';
+      width: 30px;
+      height: 1px;
+      border-bottom: 1px solid black;
+      position: absolute;
+      top: 50%;
+      left: -50%;
+    }
+  }
+
+  &__row {
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+}
+
+.second-img {
+  position: relative;
+  z-index: 20;
+}
+
+

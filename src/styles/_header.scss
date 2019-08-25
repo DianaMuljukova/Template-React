@@ -1,0 +1,62 @@
+.menu__nav {
+  margin-left: 50px;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.header {
+  padding: 35px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    list-style: none;
+    margin-right: 0;
+    transition: 0.5s;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:hover {
+        color: #636261;
+        padding: 5px 0;
+        border-top: 1px solid #636261;
+        border-bottom: 1px solid #636261;
+      }
+    }
+  }
+
+  &-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  &-block {
+    display: flex;
+    position: relative;
+  }
+}
+
+.icons-block {
+  a {
+    margin: 10px;
+    color: black;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: -5%;
+  left: 20%;
+  transition: 0.3s;
+}

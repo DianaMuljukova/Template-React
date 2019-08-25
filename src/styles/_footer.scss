@@ -1,0 +1,37 @@
+.footer {
+  background: #5C5C50;
+  color: white;
+  font-size: 12px;
+  padding: 79px 0 67px;
+
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 15px;
+
+      &:first-child {
+        margin-bottom: 33px;
+      }
+    }
+  }
+
+  &__row {
+    justify-content: space-around;
+  }
+
+  &__head {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__logo-block {
+    align-self: flex-start;
+    transform: translateY(-10%);
+  }
+}
+

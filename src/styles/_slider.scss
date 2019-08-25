@@ -1,0 +1,40 @@
+.slider {
+  background: #FDFDFB;
+  padding: 52px 0 20px;
+
+  &__row {
+    //justify-content: space-between;
+    position: relative;
+
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  &__move {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &__definition {
+    margin: 40px 0 45px;
+  }
+
+  &__button {
+    background: #D4B098;
+  }
+}
+
+
+.slide {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}

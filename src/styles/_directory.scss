@@ -1,0 +1,181 @@
+.directory {
+
+  &__titles {
+    color: #BDB9B5;
+    margin-right: 14px;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &__row {
+    justify-content: space-between;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    color: #BDB9B5;
+
+    span {
+      color: black;
+    }
+
+    .fa-chevron-down {
+      margin-left: 9px;
+      color: black;
+    }
+  }
+
+  &__range {
+    padding: 40px 0;
+  }
+}
+
+.range {
+  width: 230px;
+  height: 0;
+  border: 1px solid #D4D4D4;
+}
+
+.thumb1,
+.thumb2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #1B1A17;
+  position: relative;
+  display: inline-block;
+}
+
+.thumb1 {
+  top: -10px;
+  left: 0;
+}
+
+.thumb2 {
+  top: -10px;
+  left: 90%;
+}
+
+.filter {
+
+  button {
+    color: black;
+    border: 2px solid #E7E0CF;
+    background-color: transparent;
+    margin-top: 35px;
+  }
+
+  .brand {
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 700;
+    }
+
+    &__options {
+      //display: none;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .check {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    //overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+
+    &:checked + .checkpoint {
+      background-color: #6F6E6D;
+    }
+  }
+
+  .checkpoint {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #6F6E6D;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    box-sizing: border-box;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+      transform: rotate(45deg) translateX(-50%) translateY(-50%);
+      top: 50%;
+      left: 30%;
+    }
+  }
+
+  i {
+    cursor: pointer;
+  }
+}
+
+.catalog-watches {
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-between;
+}
+
+.watch {
+  height: 300px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  background: #f3f3f2;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #444240;
+
+    p {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 9px;
+    }
+
+    i {
+      font-size: 18px;
+
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    transform: translateY(-30px);
+    align-self: center;
+  }
+}
+
+
+

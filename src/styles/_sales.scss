@@ -1,0 +1,39 @@
+.sales {
+  padding: 66px 0 92px;
+  background: rgba(234, 228, 213, 0.38);
+
+  &__row {
+    justify-content: space-between;
+  }
+
+  &__sub {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #818181;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  //&__inputs {
+  //  display: flex;
+  //  align-items: flex-end;
+  //}
+
+  &__email {
+    border: none;
+    background-color: transparent;
+    //width: 278px;
+    border-bottom: 2px solid #1B1A17;
+    color: black;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  &__button {
+    background: #31302C;
+  }
+}
