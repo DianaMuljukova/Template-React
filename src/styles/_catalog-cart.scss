@@ -16,6 +16,8 @@
 
   &__main-photo {
     position: relative;
+    width: 423px;
+    height: 520px;
 
     img {
       width: 100%;
@@ -77,5 +79,10 @@
 
   &__description {
     font-size: 14px;
+    height: 243px;
+  }
+
+  &__items {
+    padding: 40px 0 60px;
   }
 }
